@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##install Dependencies
+## Install Dependencies;
+
 After cloning project to your local machine or developement environment,
 kindly run npm install in project directory to install all dependencies.
 
