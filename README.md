@@ -3,11 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Install Dependencies;
 
 After cloning project to your local machine or developement environment,
-kindly run npm install in project directory to install all dependencies.
+kindly run npm install in project root directory to install all dependencies.
 
 ## Available Scripts
 
-After installation of dependecies; In the project directory, you can run:
+After installation of dependecies; In the project root directory, you can run:
 
 ### `npm start`
 
