@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/Logo';
+import { useState } from 'react';
+import Main from './Main/Main';
+import Admin from './Admin/Admin';
+import Radio from './components/Radio';
 
 function App() {
+  const [mode, setMode] = useState("Main");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <Logo />
+        <div className="radio-container">
+          <Radio switchMode={val => setMode(val)} mode="Main" label="Main Mode" />
+          <Radio switchMode={val => setMode(val)} mode="Admin" label="Admin Mode" />
+          {/* <label>
+            <input onClick={(e) => setMode(e.target.value)} name="main-admin" value="Main" type="radio" />
+                Main Mode
+              </label>
+          <label>
+            <input onClick={(e) => setMode(e.target.value)} name="main-admin" value="Admin" type="radio" />
+                Admin Mode
+              </label> */}
+        </div>
       </header>
+      <main>
+        {mode === "Main" ? <Main /> : <Admin />}
+      </main>
     </div>
   );
 }
