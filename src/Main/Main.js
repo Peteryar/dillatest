@@ -4,7 +4,7 @@ import "./styles.css";
 
 function Main(){
     return(
-        <ModeLayout items={["Entry1", "Entry2", "Entry3"]}/>
+        <ModeLayout mode="Main" items={["Entry1", "Entry2", "Entry3"]}/>
     )
 }
 
